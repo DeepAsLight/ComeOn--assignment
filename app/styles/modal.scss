@@ -1,0 +1,111 @@
+.modal-wrapper {
+  width: 500px;
+  height: 600px;
+}
+
+.modal {
+  background: #292F2A;
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.modal-body {
+  padding-top: 10px;
+}
+
+.modal-header {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  font-size: 20px;
+  color: #eeeeee;
+  padding: 10px;
+}
+
+.logIn-md-container {
+  p {
+    color: white;
+  }
+
+  .ip-container {
+    width: inherit;
+    height: 45px;
+
+    input {
+      border: 0;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      padding: 0 10px;
+      background-color: #1A1E1A;
+      color: #eeeeee;
+    }
+  }
+
+  .ip-container:active{
+    border: 1px solid #556b2f !important;
+  }
+
+  button{
+    background-color: #8eb50d;
+    color: white;
+    width: 100%;
+    height: 51px;
+    border: 0;
+    border-radius: 25px;
+  }
+
+  .logout-btn{
+    .cancel-btn{
+      flex: 1;
+      background-color: gray;
+      margin-right: 8px;
+    }
+
+    .logout-btn{
+      flex: 1;
+      background-color: red;
+    }
+    div:last-child{
+      flex : 2;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 767px){
+  .modal-wrapper {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.modal{
+  
+width: 90%;
+}
+.logIn-md-container{
+  button{
+    height: 35px;
+  }
+}
+}

@@ -1,0 +1,16 @@
+.usr-container{
+    flex : 3;
+    .avatar{
+        border-radius: 50%;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .usr-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+  }

@@ -1,0 +1,21 @@
+.srch-container{
+    flex: 1;
+    .srch-wrapper{
+        border: 1.5px solid #D9D9D9;
+        border-radius: 4px;
+        padding: 10px;
+        max-height: 45px;
+        width: 100%;
+        
+        .input-box, .input-box:focus-visible{
+            border: 0;
+            outline: 0;
+            width: 92%;
+        }
+
+        .search-img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
